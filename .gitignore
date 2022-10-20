@@ -3,7 +3,7 @@ node_modules
 /dist
 composer.phar
 /vendor/
-package-lock.json
+# package-lock.json
 
 
 # local env files
