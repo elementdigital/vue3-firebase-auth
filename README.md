@@ -6,7 +6,7 @@ Vue Firebase authentication system
 npm install
 ```
 * add your firebase credentials to env.example
-* save as env.local
+* save env.example as env.local with your firebase credentials
 
 ### Compiles and hot-reloads for development
 ```
