@@ -27,7 +27,8 @@ export default createStore({
   },
   mutations: {
     SET_USER (state, user) {
-      // console.log(user)
+      console.warn('SET USER')
+      console.log(user)
       state.user = user
       // return user
     },
@@ -97,6 +98,7 @@ export default createStore({
     // RESTET USER STORE FROM AUTH
     resetUserStorefromAuth ({ commit }) {
       console.log('store/index - resetUserStorefromAuth')
+      // console.log(auth.currentUser)
       commit('SET_USER', auth.currentUser)
     },
     // SET ERROR MESSAGES

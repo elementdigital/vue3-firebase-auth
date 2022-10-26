@@ -184,4 +184,12 @@ form .error {
   margin: 10px 0;
   display: inline-block;
 }
+.home-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 140px;
+  font-weight: bold;
+}
 </style>
