@@ -1,14 +1,16 @@
 <template>
   <div class="verify">
     <h1>verify</h1>
+    <p>An email was sent to <b>{{ $store.state.user.email }}</b>.</p>
+    <p>Please check your email and follow the instructions to validate your account.</p>
     <p v-if="$store.state.user"><b>Display Name:</b> {{ this.$store.state.user.displayName }}</p>
     <p v-if="$store.state.user"><b>Email Address:</b> {{ $store.state.user.email }}</p>
   </div>
   <button @click="logout()" v-if="$store.state.user">Log Out</button>
   <button @click="deleteUser()" v-if="$store.state.user">Delete User</button>
-  <div>
+  <!--div>
     <p style="text-align:left;" v-if="$store.state.user"><b>User Data:</b> <pre>{{ $store.state.user }}</pre></p>
-  </div>
+  </div-->
 </template>
 
 <script>

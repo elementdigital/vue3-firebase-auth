@@ -8,12 +8,12 @@
     <router-link to="/login" v-if="!$store.state.user">Login</router-link>
     <button @click.prevent="logout()" v-if="$store.state.user">Log Out</button>
     <button @click.prevent="deleteUser()" v-if="$store.state.user">Delete User</button>
-    <div>
+    <!--div>
       <router-link to="/dashboard">Dashboard</router-link>
       <router-link to="/access">Access</router-link>
       <router-link to="/register">Register</router-link>
       <router-link to="/login">Login</router-link>
-    </div>
+    </div-->
   </nav>
 </template>
 
